@@ -2,8 +2,6 @@
 svg{
 	width: 50%;
 	fill: #d0d0d4;
-    transform: perspective(9000px) rotateY(30deg) rotateX(60deg);
-
 }
 
 .map__img{
@@ -77,10 +75,10 @@ svg{
 }
 
 .sous-sol{
-	transform: translateX(-54px) translateY(127px);
+	transform: translateX(-10px) translateY(10px);
 }
 .etage{
-	transform: translateX(54px) translateY(-127px);
+	transform: translateX(10px) translateY(-10px);
 }
 .global-etage{
 	opacity: 0.2;
