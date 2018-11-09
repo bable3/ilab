@@ -35,13 +35,13 @@ var activeArea = function(id){
 
 }
 
-locaux.forEach(function(local){
-	local.addEventListener('click', function(){
-		var id = this.id.replace("local-", "");
-    activeArea(id);
-    })
+// locaux.forEach(function(local){
+// 	local.addEventListener('click', function(){
+// 		var id = this.id.replace("local-", "");
+//     activeArea(id);
+//     })
 		
-	})
+// 	})
 
 noms.forEach(function(nom){
   nom.addEventListener('click', function(){

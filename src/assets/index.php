@@ -1,12 +1,11 @@
-
 <!DOCTYPE html>
 <html>
 <head>
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="/styles/app.css">
 </head>
-<body>	
 
+<body>	
 	<!-- mettre le svg dans une div avec class et id = map // chaque locaux doivent avoir une class = local et un id = "local-*batiment*_*étage*_*numéro*"-->
 	<div class="map" id="map">
 		<div class="map__img">
@@ -238,6 +237,16 @@
 		</div>
 	</div>
 	<script src="/scripts/app.js"></script>
-	<php?  ?></php>
+	
+	<script>
+		locaux.forEach(function(local){
+		local.addEventListener('click', function(){
+    	var id = <?php echo $_GET["local"] ?>;
+    	activeArea(id);
+    	})
+		
+	})
+	</script>
+
 </body>
 </html>
